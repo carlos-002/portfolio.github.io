@@ -55,13 +55,21 @@
                     <p>Sou apaixonado por criar soluções inovadoras e eficientes, combinando habilidades no desenvolvimento de front-end e back-end para construir aplicações web completas.</p>
                 </div>
                 <div class="social_icons">
-                    <div class="icon"><a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a></div>
-                    <div class="icon"><a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a></div>
+                    <div class="icon">
+                        <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <div class="icon">
+                        <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                    <div class="icon">
+                        <a href="mailto:carlosinaciorg0@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                    </div>
+                    
                 </div>
               </div>
               <div class="featured-image">
                 <div class="image">
-                    <img src="pack_de_minios_gif_by_yuliisa_d6pd1qg-fullview.jpg" alt="avatar">
+                    <img src="./img/image.png" alt="avatar">
                 </div>
               </div>
               <div class="scroll-icon-box">
@@ -134,55 +142,180 @@
     
            <!-- -------------- PROJETOS ---------------- -->
     
+           <!-- -------------- PROJETOS - Académicos ---------------- -->
            <section class="section" id="projects">
             <div class="top-header">
-              <h1>Projetos</h1>
+              <h1>Académicos</h1>
             </div>
             <div class="project-container">
-              <div class="project-box" data-target="modal-completos">
+              <div class="project-box" data-target="Pé-na-Estrada">
                 <i class="uil uil-briefcase-alt"></i>
-                <h3>Académicos</h3>
-                <label>15+ Projetos Finalizados</label>
+                <h3>Pé na Estrada</h3>
+                <label>Introdução Web Design</label>
               </div>
-              <div class="project-box" data-target="modal-clientes">
+              <div class="project-box" data-target="sistema-fatura">
                 <i class="uil uil-users-alt"></i>
-                <h3>Pessoais</h3>
-                <label>25+ Clientes Satisfeitos</label>
+                <h3>Sistema de Fatura</h3>
+                <label>Computação Distribuída</label>
               </div>
-              <div class="project-box" data-target="modal-experiencia">
+              <div class="project-box" data-target="identidade-visual">
                 <i class="uil uil-award"></i>
-                <h3>Extra-curricular</h3>
-                <label>7+ Anos de Experiência</label>
+                <h3>Identidade Visual</h3>
+                <label>Edição Multimédia</label>
               </div>
             </div>
           </section>
+
+            <!-- Modal Structure -->
+            <div class="modal" id="Pé-na-Estrada">
+                <div class="modal-content">
+                  <span class="close-modal">&times;</span>
+                  <h2>Pé na Estrada</h2>
+                  <p>Detalhes sobre o projeto de Introdução Web Design.</p>
+                  <a href="https://github.com/seu-usuario/seu-repositorio" class="button" target="_blank">
+                    Destalhes
+                  </a>
+                </div>
+              </div>
+              
+              <div class="modal" id="sistema-fatura">
+                <div class="modal-content">
+                  <span class="close-modal">&times;</span>
+                  <h2>Sistema de Fatura</h2>
+                  <p>
+                    Desenvolvi um sistema de faturação com acoplamento fraco, projetado para criar e gerenciar faturas de forma eficiente por meio de uma API REST.
+                  </p>
+                  <ul>
+                    <li><strong>Escalabilidade:</strong> Projetado para lidar com um alto volume de requisições e expansão futura, adaptando-se às necessidades do negócio.</li>
+                    <li><strong>Mensageria com RabbitMQ:</strong> Utilização do RabbitMQ para comunicação assíncrona e confiável entre os serviços, promovendo maior eficiência e resiliência no processamento de tarefas.</li>
+                    <li><strong>Containerização com Docker:</strong> Toda a aplicação foi containerizada, garantindo portabilidade e facilidade de implantação em diferentes ambientes.</li>
+                    <li><strong>Desenvolvimento com TypeScript:</strong> Garantindo uma maior segurança e previsibilidade no código, com benefícios como tipagem estática e ferramentas avançadas de desenvolvimento.</li>
+                    <li><strong>Backend em Node.js com Express.js:</strong> Fornecendo uma API REST robusta e performática para o gerenciamento de faturas.</li>
+                  </ul>
+                </div>
+              </div>
+              
+              
+              
+              <div class="modal" id="identidade-visual">
+                <div class="modal-content">
+                  <span class="close-modal">&times;</span>
+                  <h2>Identidade Visual</h2>
+                  <p>Este projeto explora conceitos de branding e design visual. Criados logotipos, paletas de cores e aplicações gráficas para diferentes plataformas.</p>
+               
+                  <a href="https://github.com/seu-usuario/seu-repositorio" class="button" target="_blank">
+                    Ver Galeria
+                  </a>
+                </div>
+              </div>
+    
+
+              <!-- -------------- PROJETOS - pessoais---------------- -->
+              <section class="section" id="projects">
+                <div class="top-header">
+                  <h1>Pessoais</h1>
+                </div>
+                <div class="project-container">
+                  <div class="project-box" data-target="portfolio-acoes">
+                    <i class="uil uil-briefcase-alt"></i>
+                    <h3>Portfolio de Ações</h3>
+                    <label>Mais informações</label>
+                  </div>
+                  <div class="project-box" data-target="buscador-cep">
+                    <i class="uil uil-users-alt"></i>
+                    <h3>Buscador de CEP</h3>
+                    <label>Mais informações</label>
+                  </div>
+                  <div class="project-box" data-target="ficha-clinica">
+                    <i class="uil uil-award"></i>
+                    <h3>Ficha clinica</h3>
+                    <label>Mais informações</label>
+                  </div>
+                </div>
+              </section>
+
+                <!-- Modal Structure -->
+                <div class="modal" id="portfolio-acoes">
+                  <div class="modal-content">
+                    <span class="close-modal">&times;</span>
+                    <h2>Portfolio de Ações</h2>
+                    <p>
+                      Desenvolvi pessoalmente um portfólio de aplicações que utiliza requisições a APIs REST. O projeto foi criado empregando tecnologias como  com o objetivo de demonstrar habilidades em desenvolvimento web.
+                    </p>
+                    <p>
+                      <strong>Tecnologias Utilizadas:</strong> 
+                      <ul>
+                        <li><strong>Frontend:</strong> HTML, CSS </li>
+                        <li><strong>Backend:</strong> Node.js e JavaScript</li>
+                      </ul>
+                    </p>
+                    <a href="https://github.com/seu-usuario/seu-repositorio" class="button" target="_blank">
+                      Ver Repositório
+                    </a>
+                  </div>
+                </div>
+                
+                <div class="modal" id="buscador-cep">
+                  <div class="modal-content">
+                    <span class="close-modal">&times;</span>
+                    <h2>Buscador de CEP</h2>
+                    <p>
+                      Desenvolvi um buscador de CEP que consome uma API externa para fornecer informações como CEP, nome da rua, estado e cidade.
+                    </p>
+                    <p>
+                      O projeto foi implementado utilizando <strong>React</strong>, com uma estrutura moderna e eficiente que aproveita as tecnologias 
+                      <p>
+                      <strong>Tecnologias Utilizadas:</strong> 
+                      <ul>
+                        <li><strong>Frontend:</strong> HTML, CSS, e React</li>
+                        <li><strong>Backend:</strong> JavaScript</li>
+                      </ul>
+                    </p>
+                    <a href="https://github.com/seu-usuario/seu-repositorio" class="button" target="_blank">
+                      Ver Repositório
+                    </a>
+                  </div>
+                </div>
+                
           
-          <!-- Modais -->
-          <div class="modal" id="modal-completos">
-            <div class="modal-content">
-              <span class="close-btn">&times;</span>
-              <h2>Projetos Completos</h2>
-              <p>Detalhes sobre os 15+ projetos finalizados com sucesso. 
-                Incluem desenvolvimento de sistemas, 
-                aplicações web e muito mais.</p>
-            </div>
-          </div>
-          
-          <div class="modal" id="modal-clientes">
-            <div class="modal-content">
-              <span class="close-btn">&times;</span>
-              <h2>Clientes Satisfeitos</h2>
-              <p>Mais de 25 clientes satisfeitos com nossos serviços, desde pequenas empresas até grandes corporações.</p>
-            </div>
-          </div>
-          
-          <div class="modal" id="modal-experiencia">
-            <div class="modal-content">
-              <span class="close-btn">&times;</span>
-              <h2>Anos de Experiência</h2>
-              <p>7+ anos de experiência no mercado, com foco em qualidade, inovação e excelência.</p>
-            </div>
-          </div>
+                <div class="modal" id="ficha-clinica">
+                  <div class="modal-content">
+                    <span class="close-modal">&times;</span>
+                    <h2>Ficha Clínica</h2>
+                    <p>
+                      Desenvolvi um sistema de ficha clínica para registro e gerenciamento de usuários em uma base de dados local. O sistema foi projetado com uma interface intuitiva e dinâmica, garantindo facilidade de uso e eficiência no acesso às informações.
+                    </p>
+                    <p>
+                      <strong>Tecnologias Utilizadas:</strong> 
+                      <ul>
+                        <li><strong>Frontend:</strong> HTML, CSS e JavaScript</li>
+                        <li><strong>Backend:</strong> Node.js e MySQL</li>
+                      </ul>
+                    </p>
+                    <a href="https://github.com/seu-usuario/seu-repositorio" class="button" target="_blank">
+                      Ver Repositório
+                    </a>
+                  </div>
+                </div>
+                
+
+              
+             
+           <!-- extra -->
+              <section class="section" id="about">
+                <div class="top-header">
+                  <h1>Extra-curricular</h1>
+                </div>
+                <div class="row">
+                  <div class="col">
+                      <div class="about-info">
+                          <h3>Bombeiro Voluntario</h3>
+                          <p> Como bombeiro, atuo em situações de emergência, resgate e prevenção, o que fortalece minha capacidade de trabalhar sob pressão, 
+                            em equipe e de forma eficiente. Essa experiência me ensinou a ser resiliente e focado na resolução de problemas.
+                         </div>
+                  </div>
+                </div>
+             </section>
           
     
            <!-- -------------- CONTATO ---------------- -->
@@ -224,8 +357,16 @@
                 </ul>
             </div>
             <div class="footer-social-icons">
-                <div class="icon"><a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a></div>
-                <div class="icon"><a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a></div>
+                <div class="icon">
+                    <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <div class="icon">
+                    <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+                <div class="icon">
+                    <a href="mailto:carlosinaciorg0@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                </div>
+                
             </div>
         </footer>
     

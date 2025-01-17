@@ -116,34 +116,26 @@ function scrollActive() {
 window.addEventListener('scroll', scrollActive)
 
 document.addEventListener("DOMContentLoaded", () => {
+  const projectBoxes = document.querySelectorAll(".project-box");
   const modals = document.querySelectorAll(".modal");
-  const closeBtns = document.querySelectorAll(".close-btn");
+  const closeButtons = document.querySelectorAll(".close-modal");
 
-  // Adiciona evento de clique para cada project-box
-  document.querySelectorAll(".project-box").forEach((box) => {
+  projectBoxes.forEach((box) => {
     box.addEventListener("click", () => {
-      const targetModalId = box.getAttribute("data-target");
-      const targetModal = document.getElementById(targetModalId);
-      if (targetModal) {
-        targetModal.style.display = "flex";
-      }
+      const targetModal = document.getElementById(box.getAttribute("data-target"));
+      if (targetModal) targetModal.style.display = "block";
     });
   });
 
-  // Fechar modal ao clicar no botão "×"
-  closeBtns.forEach((btn) => {
-    btn.addEventListener("click", () => {
-      btn.closest(".modal").style.display = "none";
+  closeButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      button.parentElement.parentElement.style.display = "none";
     });
   });
 
-  // Fechar modal ao clicar fora do conteúdo
   window.addEventListener("click", (event) => {
     modals.forEach((modal) => {
-      if (event.target === modal) {
-        modal.style.display = "none";
-      }
+      if (event.target === modal) modal.style.display = "none";
     });
   });
 });
-
