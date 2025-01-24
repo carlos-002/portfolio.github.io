@@ -1,5 +1,5 @@
 /* ----- POPPINS FONT Link ----- */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 /* ----- VARIABLES ----- */
 :root{
@@ -449,6 +449,51 @@ h3{
     z-index: 2;
 }
 
+@media (max-width: 768px) {
+    .contact-info {
+        padding: 15px 20px; /* Reduz o padding */
+        max-width: 400px; /* Ajusta a largura máxima */
+        height: auto; /* Altura automática para evitar cortes */
+    }
+
+    .contact-info > h2 {
+        font-size: 20px; /* Reduz o tamanho do título */
+        margin-bottom: 15px;
+    }
+
+    .contact-info > p {
+        font-size: 14px; /* Reduz o tamanho do texto */
+        gap: 8px;
+    }
+
+    .contact-info p > i {
+        font-size: 16px; /* Ajusta o ícone */
+    }
+}
+
+/* Breakpoint para telas menores que 480px */
+@media (max-width: 480px) {
+    .contact-info {
+        padding: 10px 15px; /* Padding menor */
+        max-width: 100%; /* Ocupa toda a largura */
+        height: auto; /* Ajusta a altura automaticamente */
+    }
+
+    .contact-info > h2 {
+        font-size: 18px; /* Título ainda menor */
+        margin-bottom: 10px;
+    }
+
+    .contact-info > p {
+        font-size: 12px; /* Texto mais compacto */
+        gap: 6px;
+    }
+
+    .contact-info p > i {
+        font-size: 14px; /* Ícone proporcional */
+    }
+}
+
 /* ----- CONTACT FORM ----- */
 .form-control{
     display: flex;
@@ -738,6 +783,7 @@ footer{
   .button:hover {
     background-color: #00B5E7;
   }
+ 
   
   @media (max-width: 480px) {
     .modal-content {
@@ -791,29 +837,74 @@ footer{
     }
 }
 
-
+/* Breakpoint para telas menores que 768px */
 @media (max-width: 768px) {
     .skills-list {
-        justify-content: center;
+        display: flex;
+        flex-wrap: wrap; /* Permite quebrar linhas */
+        justify-content: center; /* Centralizar itens */
+        gap: 8px; /* Espaçamento entre os itens */
     }
 
     .skills-list span {
         font-size: 12px;
-        padding: 2px 8px;
+        padding: 4px 8px; /* Mantém proporções agradáveis */
+        text-align: center; /* Centraliza o conteúdo */
     }
-}
 
-@media (max-width: 300px) {
     .skills-box {
-        margin: 5px;
+        margin: 10px auto; /* Centraliza horizontalmente */
+        padding: 10px; /* Adiciona espaçamento interno */
+        width: 90%; /* Garante que o box não ocupe 100% */
+        max-width: 500px; /* Define um limite para evitar expansões */
     }
 
     .skills-header {
-        margin-bottom: 20px;
+        font-size: 18px;
+        margin-bottom: 15px;
+        text-align: center; /* Centraliza o título */
+    }
+}
+
+/* Breakpoint para telas menores que 480px */
+@media (max-width: 480px) {
+    .skills-list {
+        gap: 6px; /* Reduz o espaçamento para telas menores */
     }
 
     .skills-list span {
-        font-size: 10px;
-        padding: 2px 5px;
+        font-size: 11px;
+        padding: 3px 6px; /* Ajuste interno para ficar compacto */
+    }
+
+    .skills-header {
+        font-size: 16px; /* Reduz título para caber melhor */
+    }
+
+    .skills-box {
+        padding: 8px;
+        margin: 8px auto; /* Menor margem para economizar espaço */
+    }
+}
+
+/* Breakpoint para telas menores que 300px */
+@media (max-width: 300px) {
+    .skills-box {
+        margin: 5px auto; /* Menor margem */
+        padding: 5px; /* Mais compacto */
+    }
+
+    .skills-header {
+        font-size: 14px; /* Reduz título ainda mais */
+        margin-bottom: 10px; /* Ajusta espaçamento inferior */
+    }
+
+    .skills-list {
+        gap: 4px; /* Menor espaçamento entre itens */
+    }
+
+    .skills-list span {
+        font-size: 9px; /* Reduz texto para caber */
+        padding: 2px 4px; /* Ajuste interno */
     }
 }
