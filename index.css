@@ -805,6 +805,11 @@ footer{
         font-size: 18px;
     }
 
+    .modal-content ul li::before {
+        left: 0;
+        font-size: 13px;
+    }
+
     .modal-content p,
     .modal-content ul li {
         font-size: 12px;
