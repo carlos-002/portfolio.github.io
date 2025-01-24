@@ -693,6 +693,7 @@ footer{
     height: 100%;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.8); /* Fundo escuro semi-transparente */
+    
   }
   
   .modal-content {
@@ -785,7 +786,11 @@ footer{
   }
  
   
-  @media (max-width: 480px) {
+   @media (max-width: 480px) {
+    .modal{
+        margin: 0 auto; 
+        left: -10%; 
+    }
     .modal-content {
         margin: 3% auto;
         padding: 10px;
@@ -813,13 +818,13 @@ footer{
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        margin: 0; /* Remove margin para centralizar */
+        margin: 0; 
         padding: 15px;
         width: 95%;
         max-width: 300px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombras suaves opcionais */
-        border-radius: 8px; /* Arredondamento para estética */
-        background: #fff; /* Fundo branco */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+        border-radius: 8px; 
+        background: #fff; 
     }
 
     .modal-content h2 {
