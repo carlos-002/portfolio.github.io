@@ -694,7 +694,7 @@ footer{
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.8); /* Fundo escuro semi-transparente */
     margin: 0 auto; 
-    left: 0%; 
+    left: 0; 
     
 }
   
@@ -818,7 +818,7 @@ footer{
 @media (max-width: 768px) {
     .modal{
         margin: 0 auto; 
-        left: 0; 
+        left: -7%; 
     }
     .modal-content {
         position: absolute;
