@@ -100,7 +100,7 @@ nav{
 }
 .nav-name{
     font-size: 30px;
-    font-weight: 600;
+    font-weight: 500;
     color: var(--text-color-third);
 }
 .nav-logo span{
@@ -181,8 +181,8 @@ nav{
     border-radius: 5px;
 }
 .featured-name{
-    font-size: 50px;
-    font-weight: 600;
+    font-size: 40px;
+    font-weight: 500;
     color: var(--text-color-second);
     margin-block: 20px;
 }
@@ -781,5 +781,31 @@ footer{
     .button {
         padding: 8px 16px;
         font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .skills-list {
+        justify-content: center;
+    }
+
+    .skills-list span {
+        font-size: 12px;
+        padding: 2px 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-box {
+        margin: 5px;
+    }
+
+    .skills-header {
+        margin-bottom: 20px;
+    }
+
+    .skills-list span {
+        font-size: 10px;
+        padding: 2px 5px;
     }
 }
