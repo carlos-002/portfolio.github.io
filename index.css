@@ -813,6 +813,10 @@ footer{
     }
 }
 @media (max-width: 768px) {
+    .modal{
+        margin: 0 auto; 
+        left: -10%; 
+    }
     .modal-content {
         position: absolute;
         top: 50%;
