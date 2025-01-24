@@ -763,10 +763,17 @@ footer{
 }
 @media (max-width: 768px) {
     .modal-content {
-        margin: 5% auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0; /* Remove margin para centralizar */
         padding: 15px;
         width: 95%;
-        max-width: 500px;
+        max-width: 300px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombras suaves opcionais */
+        border-radius: 8px; /* Arredondamento para estética */
+        background: #fff; /* Fundo branco */
     }
 
     .modal-content h2 {
@@ -783,6 +790,7 @@ footer{
         font-size: 14px;
     }
 }
+
 
 @media (max-width: 768px) {
     .skills-list {
